@@ -1,0 +1,64 @@
+{
+  "mitems": [
+    {
+      "name": "Диван",
+      "artikul": "а1",
+      "price": 994,
+      "Proizv": "Мебельный завод",
+      "category": "Мебель",
+      "weight": "25",
+      "number": 7,
+      "id": 1
+    },
+    {
+      "name": "Компьютер",
+      "artikul": "б2",
+      "price": 995,
+      "Proizv": "Intel",
+      "category": "Техника",
+      "weight": "5",
+      "number": 3,
+      "id": 2
+    },
+    {
+      "name": "Книга",
+      "artikul": "в3",
+      "price": 996,
+      "Proizv": "Издательство",
+      "category": "Книги",
+      "weight": "0.5",
+      "number": 6,
+      "id": 3
+    },
+    {
+      "name": "Телефон",
+      "artikul": "г4",
+      "price": 997,
+      "Proizv": "Apple",
+      "category": "Телефоны",
+      "weight": "0.5",
+      "number": 1,
+      "id": 4
+    },
+    {
+      "name": "Кресло",
+      "artikul": "абв2",
+      "price": 998,
+      "Proizv": "Мебельный Завод",
+      "category": "Мебель",
+      "weight": "15",
+      "number": 7,
+      "id": 5
+    },
+    {
+      "name": "Самсунг",
+      "artikul": "фывфцв2",
+      "price": 991,
+      "Proizv": "Apple",
+      "category": "Телефоны",
+      "weight": "0.4",
+      "number": 5,
+      "id": 6
+    }
+  ]
+}

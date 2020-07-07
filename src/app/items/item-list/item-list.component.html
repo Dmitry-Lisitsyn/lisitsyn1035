@@ -1,0 +1,52 @@
+
+ <div class="row">
+  <div class="col">
+    <h4>Фильтр</h4>
+    <input 
+    type="text" 
+    class="form-control" 
+    [(ngModel)]="searchCat"
+    placeholder="Введите категорию или количество">
+  
+  </div>
+</div> 
+<br>
+<table id="table" class="tablesorter">
+    <thead>
+      <tr>
+        <th scope="col-3">#</th>
+        <th scope="col-3">Название</th>
+        <th scope="col-3">Категория</th>
+        <th scope="col-3">Вес</th>
+        <th scope="col-3">Цена</th>
+        <th scope="col-3">Кол-во на складе</th>
+        <th scope = "col-3">
+            <button class="btn btn-primary" (click)="onAddProfile()">
+            Добавить Позицию
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ttt of items | myfilter: searchCat">
+            <td scope="row">{{ ttt.id }}</td>
+            <td >{{ ttt.name }}</td>
+            <td>{{ttt.category }}</td>
+            <td>{{ttt.weight }}</td>
+            <td>{{ttt.price}} </td>
+            <td> 
+              <button type="button" id ="minus" class="btn btn-primary btn-sm"(click)="onMinus(ttt.id)">-</button>
+               {{ttt.number}}
+               <button type="button" id ="plus" class="btn btn-primary btn-sm" (click)="onPlus(ttt.id)">+</button>
+              </td>
+            <td style = "text-align: center;">
+                <button class="btn btn-primary" (click)="onLinkProfile(ttt.id)">
+                  Информация
+                </button>
+                <button mat-button class="btn btn-danger" (click)="onDelete(ttt)" >
+                  Удалить
+                </button>
+              </td>
+      </tr>
+    </tbody>
+  </table>
